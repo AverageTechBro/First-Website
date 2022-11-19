@@ -1,0 +1,168 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  overflow: visible;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.testimonial {
+  position: relative;
+  min-width: 1400px;
+  max-width: 100%;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+.testimonial .image {
+  height: 170px;
+  width: 170px;
+  object-fit: cover;
+  border-radius: 50%;
+  border-color: black;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+.testimonial .slide-1,
+.testimonial .slide-2,
+.testimonial .slide-3,
+.testimonial .slide-4{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 30px;
+  height: 100vh;
+  width: 1400px;
+  padding: 100px;
+  
+}
+
+.testimonial .slide-1{
+ background-color: black;
+  width: 1500px;
+}
+
+.testimonial .slide-2,
+.testimonial .slide-3,
+.testimonial .slide-4{
+  background-color: black;;
+  
+}
+
+.slide p {
+  text-align: center;
+  padding: 0 160px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;}
+
+.slide-1 .quote-icon,
+.slide-2 .quote-icon,
+.slide-3 .quote-icon,
+.slide-4 .quote-icon {
+  font-size: 50px;
+  color: rgb(255, 255, 255);;
+}
+
+.slide-1 .details,
+.slide-2 .details,
+.slide-3 .details,
+.slide-4 .details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.details .name {
+  font-size: 24px;
+  font-weight: 600;
+  color: red
+}
+.details .job {
+  font-size: 16px;
+  font-weight: 400;
+  color: red
+}
+/* swiper button css */
+.nav-btn {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  transform: translateY(30px);
+  background-color: rgba(2, 162, 255, 0.3);
+  transition: 0.2s;
+  margin-left: 30px;
+  margin-right:10px ;
+}
+.nav-btn:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.nav-btn::after,
+.nav-btn::before {
+  font-size: 20px;
+  color: #fff;
+}
+.swiper-pagination-bullet {
+  background-color: red
+}
+.swiper-pagination-bullet-active {
+  background-color: #4070f4;
+}
+@media screen and (max-width: 768px) {
+  .slide p {
+    padding: 0 20px;
+  }
+  .nav-btn {
+    display: none;
+  }
+}
+body {
+  background-color: whitesmoke;;
+  background-size: cover;;
+  background-repeat: no-repeat ;
+}
+
+.bcs-text{
+  position: static;
+  color: yellow;
+  background: linear-gradient(-45deg, #094fe6, #000000, #000000, #e00a0a);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+  padding: 50px;
+  border-radius: 40px;
+  max-width: 400px;
+  text-shadow:2px 2px 8px #000000;;
+  font-size: 20px;
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.bcs-text-2{
+  position: static;
+  color: yellow;
+  background: linear-gradient(-45deg, #094fe6, #000000, #000000, #e00a0a);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+  padding: 50px;
+  border-radius: 40px;
+  max-width: 500px;
+  text-shadow:2px 2px 8px #000000;;
+  font-size: 20px;
+}
