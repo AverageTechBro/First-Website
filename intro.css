@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto ;
+    overflow-x: hidden;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+a{
+    cursor: pointer;
+}
+
+.intro{
+    color: yellow;
+    font-size: 80px;
+    font-weight: Bold;
+    font-family: 'Dancing Script', cursive;
+    transform: translate(1200px , 50px);
+    display: block;
+    animation: 1s ease 1 introfade;
+
+
+}
+
+.front-text{
+    overflow-y: hidden;
+    position: relative;
+    z-index: 1;
+    height: 700px;
+    overflow-x: hidden;
+    
+}
+
+
+.background-sth{
+    width: 700px;
+    height: 100%;
+    background: linear-gradient(to right, rgba(246,211,101,0.5), rgba(253,160,133,1));
+    border-radius: 40px;
+    box-shadow: 30px, 50px, 7px rgba(0,0,0,0.3);
+    position: absolute;
+    right: 0;
+    top:0;
+    z-index:-1
+}
+
+.social-img{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    right: 150px;
+    overflow-x: hidden;
+    bottom: 70px;
+    
+}
+.icon-image{
+    width: 50px;
+    margin-right: 50px;
+    margin-top: 25px;
+    overflow-x: hidden;
+
+}
+
+.front-text div,
+.icon-image{
+    animation: 1.2s ease 1 fadein;
+}
+
+@keyframes fadein {
+    0% { opacity: 0;
+    transform: translateX(300px);
+    filter: blur(5px);
+}
+
+    100%{opacity: 1;
+    transform: translateX(0);
+    filter: blur(0px);
+}
+}
+
+.intro-image{
+    width: 700px;
+    transform: translate(1104px, 91px);
+    display: inline-block;
+    overflow-x: hidden;
+    
+    
+}
+
+
+
+
+.front-text .intro-image
+{
+    animation: 1.3s ease 1 imgfade;
+}
+
+@keyframes imgfade {
+    0%{
+        opacity: 0;
+        transform: translate(1400px, 91px);
+        filter: blur(5px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(1104px, 91px);
+        filter: blur(0px);
+    }
+}
+
+.front-text .intro{
+    animation: 1s ease 1 introfade;
+}
+
+@keyframes introfade {
+    0%{
+        opacity: 0;
+        transform: translate(1500px, 50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(1200px, 50px);
+    }
+}
+
+html{
+    overflow-x: hidden;
+    overflow-y: h;
+}

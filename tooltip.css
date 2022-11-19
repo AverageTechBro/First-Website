@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto ;
+    overflow-x: hidden;
+}
+
+p{
+    position: absolute;
+
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+
+
+
+ .social-img{
+    overflow-y: hidden;
+    z-index: 4;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 30px;
+    overflow-x: hidden;
+    
+    
+    
+}
+
+.social-img p{
+    background-color: rgba(185, 72, 6, 0.5);
+    width: 100px;
+    height: 25px;
+    text-align: center;
+    transform: translate(-20px , 0px);
+    border-radius: 20px;
+    border-color: black;
+    color: white;
+    padding-bottom: 20px;
+    overflow-y: hidden;
+    padding: 0px 5px;
+    position: absolute;
+    opacity: 0;
+    overflow-x: hidden;
+    transition: opacity 0.5s ease;
+}
+
+ .icon-image:hover + p{
+    opacity: 1;
+    overflow-y: hidden;
+}
